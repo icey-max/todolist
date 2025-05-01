@@ -1,0 +1,178 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(185, 108, 8, 0.849);
+    font-family: 'Inter' , sans-serif;
+
+}
+
+.main-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+    padding: 17px;
+}
+
+/* SIDEBAR */ 
+.sidebar{
+    grid-column: 1/1;
+    grid-row: 1/ 3;
+    height: 100%; 
+   
+}
+
+.sidebar-container{
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: 20px;
+    height: 100%;
+
+}
+
+
+.sidebar{
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.upper-part{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.upper-part{
+    text-align: center;
+
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight:600;
+}
+.createcontainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(212, 211, 211);
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+.createtask {
+    background-color: white;
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 5px;
+    padding: 10px 60px 10px 60px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.createtask:hover{
+    transition: 0.25s;
+    color:   rgb(216, 167, 7);
+
+}
+
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    padding: 25px;
+    height: 30%;
+
+}
+
+.useful-links li{
+    list-style: none;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    gap: 7px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+}
+
+.useful-links button{
+    width: 100%;
+    background-color: white;
+    border: none;
+    text-align: start;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.sidebarbtn:hover{
+    transition: 0.25s;
+    color: rgb(216, 167, 7);
+}
+
+
+
+.sidebar-container hr{
+    color: rgb(255, 255, 255);
+   margin-top: 10px;
+   margin-bottom: 10px
+}
+
+
+/* MAIN */ 
+.main-page{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.title-component{
+    margin: 50px;
+}
+.introduction{
+margin: 10px 50px;
+display: flex;
+flex-direction: column;
+}
+
+.piecharts{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+    width: 300px;
+    height: 400px;
+}
+
+.chart-title{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.separator{
+    border: 1px solid rgb(179, 176, 174);
+   
+}
+
+.sidebarbtn i{
+    color: blue;
+}
+

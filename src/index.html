@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar">
+                    <div class="upper-part">
+                        <p class ="logo">Here goes the logo</p>
+                        <p>A nice separator from the logo</p>
+        
+                        
+                    </div>
+                    <div class="createcontainer">
+                        <button class="createtask">Create task</button>
+                    </div>
+                    <ul class = "useful-links">
+                        <li>
+                            <box-icon type='solid' name='dashboard'></box-icon>
+                            <button class="dashboard sidebarbtn">Dashboard</button>
+                            </li>
+                        <li>
+                            <box-icon name='list-check' pull = "left"></box-icon>
+                            <button class="alltasks sidebarbtn">All Tasks</button>
+                        </li>
+                        
+                        <li>
+                            <box-icon name='calendar' type='solid' ></box-icon>
+                            <button class="today sidebarbtn">Today</button>
+                        
+                        </li>
+                        <li>
+                            <box-icon name='hourglass-top' type='solid'></box-icon>
+                            <button class="upcoming sidebarbtn">Upcoming</button>
+                        
+                        </li>
+            
+            
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page">
+            <div class="title-component">
+                <h1><box-icon type='solid' name='dashboard'></box-icon>Dashboard</h1>
+                <hr class = "separator">
+            </div>
+            <div class="introduction">
+                <p>Here's an overview on your tasks</p>
+                <div class="piecharts">
+                    <div class="item1 completed">
+                        <p class = "chart-title">Completed</p>
+                    </div>
+                    <div class="item1 uncompleted">
+                        <p class = "chart-title">Uncompleted</p>
+
+                    </div>
+                    <div class="item1 overdue">
+                        <p class = "chart-title">Overdue</p>
+
+                    </div>
+                    <div class="item1 today">
+                        <p class = "chart-title">Today</p>
+
+                    </div>
+
+                   
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

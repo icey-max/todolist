@@ -1,0 +1,102 @@
+.sidebar-container{
+    min-width: 200px;
+    max-width: 250px;
+    align-content: center;
+    margin-left: 20px;
+
+}
+
+
+.sidebar{
+    background-color: rgb(253, 253, 253);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.upper-part{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.upper-part{
+    text-align: center;
+
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight:600;
+}
+.createcontainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(212, 211, 211);
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+.createtask {
+    background-color: white;
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 5px;
+    padding: 10px 60px 10px 60px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+}
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    padding: 25px;
+    height: 30%;
+
+}
+
+.useful-links li{
+    list-style: none;
+}
+
+.useful-links button{
+    width: 100%;
+    background-color: white;
+    border: none;
+    text-align: start;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sidebar-container hr{
+    color: rgb(255, 255, 255);
+   margin-top: 10px;
+   margin-bottom: 10px
+};
+
+
+
+<!-- <div class="sidebar-container">
+        <div class="sidebar">
+            <div class="upper-part">
+                <p class ="logo">Here goes the logo</p>
+                <p>A nice separator from the logo</p>
+
+
+            </div>
+            <div class="createcontainer">
+                <button class="createtask">Create task</button>
+            </div>
+            <ul class = "useful-links">
+                <li><button class="dashboard sidebarbtn">Dashboard</button></li>
+                <li><button class="alltasks sidebarbtn">All Tasks</button></li>
+                <li><button class="today sidebarbtn">Today</button></li>
+                <li><button class="upcoming sidebarbtn">Upcoming</button></li>
+    
+    
+            </ul>
+        </div>
+    </div> -->
