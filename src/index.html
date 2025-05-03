@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <div class="main-container">
         <div class="sidebar">
             <div class="sidebar-container">
                 <div class="sidebar">
                     <div class="upper-part">
-                        <p class ="logo">Here goes the logo</p>
+                        <p class="logo">Here goes the logo</p>
                         <p>A nice separator from the logo</p>
-        
-                        
+
+
                     </div>
                     <div class="createcontainer">
-                        <button class="createtask">Create task</button>
+                        <button class="createtask" id="showDialog">Create task</button>
                     </div>
-                    <ul class = "useful-links">
+                    <ul class="useful-links">
                         <li>
                             <box-icon type='solid' name='dashboard'></box-icon>
                             <button class="dashboard sidebarbtn">Dashboard</button>
-                            </li>
+                        </li>
                         <li>
-                            <box-icon name='list-check' pull = "left"></box-icon>
+                            <box-icon name='list-check' pull="left"></box-icon>
                             <button class="alltasks sidebarbtn">All Tasks</button>
                         </li>
-                        
+
                         <li>
-                            <box-icon name='calendar' type='solid' ></box-icon>
+                            <box-icon name='calendar' type='solid'></box-icon>
                             <button class="today sidebarbtn">Today</button>
-                        
+
                         </li>
                         <li>
                             <box-icon name='hourglass-top' type='solid'></box-icon>
                             <button class="upcoming sidebarbtn">Upcoming</button>
-                        
+
                         </li>
-            
-            
+
+                        <li>
+                            <box-icon name='folder-open' type='solid'></box-icon>
+                            <button class="upcoming sidebarbtn">Projects</button>
+                            <box-icon id = "plusSign" name = 'plus-circle' type = 'solid' animation = "tada-hover"></box-icon>
+                        </li>
+
+                       
+
+
                     </ul>
+                    <div class="projects-list">
+                        <ul class ="projects-ul">
+                            <li><box-icon name='folder' type='regular' size = "xs"></box-icon>
+                                <p>Home</p>
+                            </li>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="main-page">
             <div class="title-component">
-                <h1><box-icon type='solid' name='dashboard'></box-icon>Dashboard</h1>
-                <hr class = "separator">
+                <h1><box-icon type='solid' name='dashboard'></box-icon> Dashboard</h1>
+                <hr class="separator">
             </div>
             <div class="introduction">
                 <p>Here's an overview on your tasks</p>
                 <div class="piecharts">
                     <div class="item1 completed">
-                        <p class = "chart-title">Completed</p>
+                        <p class="chart-title">Completed</p>
                     </div>
                     <div class="item1 uncompleted">
-                        <p class = "chart-title">Uncompleted</p>
+                        <p class="chart-title">Uncompleted</p>
 
                     </div>
                     <div class="item1 overdue">
-                        <p class = "chart-title">Overdue</p>
+                        <p class="chart-title">Overdue</p>
 
                     </div>
                     <div class="item1 today">
-                        <p class = "chart-title">Today</p>
+                        <p class="chart-title">Today</p>
 
                     </div>
 
-                   
+
 
 
                 </div>
@@ -83,5 +104,57 @@
         </div>
     </div>
 
+    <dialog class="add-tag" id="favDialog">
+        <form class="dialog-form">
+            <p>
+                <label> Task Title
+                    <input class="title" type="text">
+                </label>
+                <label>Description
+                    <textarea type="text" class="description"> </textarea>
+                </label>
+
+
+            <div class="misc-container">
+
+
+                <label id="projects">
+                    Projects
+                    <select id="projectsOptions" >
+                        <option value="">Choose..</option>
+                    </select>
+
+                </label>
+
+                <label>
+                    Priority
+                    <select id = "priority" >
+                        <option value="">Choose..</option>
+                        <option value="low">Low </option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+
+                </label>
+
+
+                <label id="time">Due Date
+                    <input class="time" type="date" id = "date">
+                </label>
+
+            </div>
+            </p>
+            <div class="cancel">
+                <button  id = "cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+
+
+
+            </div>
+        </form>
+    </dialog>
+    <output></output>
+
 </body>
+
 </html>
