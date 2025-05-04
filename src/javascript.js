@@ -1,8 +1,11 @@
 import 'boxicons'
 import {compareAsc, format} from "date-fns";
 import "./styles.css";
+import drawCompleted from './chartHandle';
+import updateToAllTasks from './alltasks';
+import dashboardUpdate from './dashboard';
 
-const test = format(new Date(2025, 4, 2), "yyyy-MM-dd");
+const test = parseInt(format(new Date(2025, 4, 2), "yyyyMMdd"));
 
 console.log(test)
 
@@ -10,6 +13,9 @@ console.log(test)
 
 let projectsList = ["Home 🏠"]
 const tasksList = []
+
+
+// UI LOCATORS
 
 
 // CONSTRUCTORS
@@ -24,6 +30,7 @@ function Task(title,description, project, dueDate, priority){
     this.project = project;
     this.dueDate = dueDate;
     this.priority = priority
+    this.status = "unfinished"
 }
 
 
@@ -74,6 +81,8 @@ const newOne = new Task(inputEl.value,textAreaEl.value,selectEl.value,selectPrio
 
 tasksList.push(newOne)
 
+drawCompleted(tasksList)
+
  
 });
 
@@ -97,3 +106,16 @@ plusSignHTML.addEventListener("click",() => {
 
 })
 
+console.log(tasksList)
+
+drawCompleted(tasksList)
+
+
+document.querySelector("#allTasks").addEventListener("click", () =>{
+updateToAllTasks()
+
+})
+
+document.querySelector(".dashboard").addEventListener("click", () => {
+  dashboardUpdate()
+})
