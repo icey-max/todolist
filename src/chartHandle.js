@@ -42,18 +42,18 @@ export default function drawCompleted(data){
 
 
 
-        // element.status === "unfinished" ? stats.
         
     });
 
     if (completedChart) completedChart.destroy();
-    // if (uncompletedChart) uncompletedChart.destroy();
-    // if (overdueChart) overdueChart.destroy();
+    if (uncompletedChart) uncompletedChart.destroy();
+    if (overdueChart) overdueChart.destroy();
     if (todayChart) todayChart.destroy();
 
 
 
 // Create new charts
+
 completedChart = new Chart(canvasCompleted, {
     type: 'pie',
     data: {

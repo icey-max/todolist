@@ -112,10 +112,11 @@ drawCompleted(tasksList)
 
 
 document.querySelector("#allTasks").addEventListener("click", () =>{
-updateToAllTasks()
+updateToAllTasks(tasksList)
 
 })
 
 document.querySelector(".dashboard").addEventListener("click", () => {
   dashboardUpdate()
+  drawCompleted(tasksList)
 })

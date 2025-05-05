@@ -3,7 +3,7 @@ export default function dashboardUpdate(){
     const mainPage = document.querySelector(".main-page");
 
 
-    const dashboardHTML = `    <div class="main-page">
+    const dashboardHTML = `<div class="main-page">
             <div class="title-component">
                 <h1 class = "titleh1"><box-icon class = "top-icon" type='solid' name='dashboard'></box-icon> Dashboard</h1>
                 <hr class="separator">
